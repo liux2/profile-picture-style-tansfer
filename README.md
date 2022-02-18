@@ -8,15 +8,26 @@
 ## Table of Contents
 
 - [What's This Project About?](#what-s-this-project-about-)
+  * [Styles Available](#styles-available)
 - [Dependencies](#dependencies)
 - [How to Run?](#how-to-run-)
+- [Testing](#testing)
 - [License](#license)
 
 ## What's This Project About?
 
+Ever wanted to make your profile picture stylish? Ever wanted to make a stylish
+profile picture that can be chained on NFTs? This project takes your profile picture,
+based on the content in the picture, relative styles will be transferred onto your
+profile picture.
+
+### Styles Available
+
 ## Dependencies
 
 ## How to Run?
+
+## Testing
 
 ## License
 
