@@ -7,6 +7,17 @@
 
 ## Table of Contents
 
+- [What's This Project About?](#what-s-this-project-about-)
+- [Dependencies](#dependencies)
+- [How to Run?](#how-to-run-)
+- [License](#license)
+
+## What's This Project About?
+
+## Dependencies
+
+## How to Run?
+
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE)
