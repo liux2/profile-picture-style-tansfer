@@ -55,18 +55,18 @@ The training and testing process are exactly as the original repository document
 
 1. Training
  ```bash
- python train.py train.py [-h]
-                          [--batch_size BATCH_SIZE]
-                          [--epoch EPOCH]
-                          [--gpu GPU]
-                          [--learning_rate LEARNING_RATE]
-                          [--snapshot_interval SNAPSHOT_INTERVAL]
-                          [--train_content_dir TRAIN_CONTENT_DIR]
-                          [--train_style_dir TRAIN_STYLE_DIR]
-                          [--test_content_dir TEST_CONTENT_DIR]
-                          [--test_style_dir TEST_STYLE_DIR]
-                          [--save_dir SAVE_DIR]
-                          [--reuse REUSE]
+ python train.py [-h]
+                 [--batch_size BATCH_SIZE]
+                 [--epoch EPOCH]
+                 [--gpu GPU]
+                 [--learning_rate LEARNING_RATE]
+                 [--snapshot_interval SNAPSHOT_INTERVAL]
+                 [--train_content_dir TRAIN_CONTENT_DIR]
+                 [--train_style_dir TRAIN_STYLE_DIR]
+                 [--test_content_dir TEST_CONTENT_DIR]
+                 [--test_style_dir TEST_STYLE_DIR]
+                 [--save_dir SAVE_DIR]
+                 [--reuse REUSE]
  ```
 
 2. Testing
