@@ -7,10 +7,10 @@
 
 ## Table of Contents
 
-- [What's This Project About?](#what-s-this-project-about-)
+- [What's This Project About?](#what-s-this-project-about)
   * [Dataset](#dataset)
 - [Dependencies](#dependencies)
-- [How to Run?](#how-to-run-)
+- [How to Run?](#how-to-run)
 - [Findings](#findings)
 - [License](#license)
 
@@ -83,7 +83,36 @@ The training and testing process are exactly as the original repository document
 
 ## Findings
 
+We trained the model for 15 epochs on a AWS PyTorch instance. Our results shows that:
 
+* Style with lots of white color might wipe out content color
+* Style with lots of black color might smear content color
+* Style with abundant colors might enrich content color
+* Style with fewer textures might decrease the details of content
+* Style with abundant textures might enrich the details of content
+
+Some output images:
+
+![Styles](readme_img/Styles.png)
+![Successful Transfers](readme_img/good_transfers.png)
+![People](readme_img/people.png)
+![Scene](readme_img/scene.png)
+
+For a particular style image, we should adjust the Alpha to control the trade-off
+between content and style. After a few round of testing, we found that:
+
+* Results come out better with:
+  * style and content images with strong strokes, outlines, textures, color contrast
+* Results not good with:
+  * anime scene style (lack of texture)
+  * oil painting style (dark background)
+  * people photo content with shadows or dark makeups (high color contrast on face can be oddly amplified)
+  * lines and texts (twisted)
+
+We recommend:
+
+* Higher alpha for anime
+* Lower alpha for oil painting
 
 ## License
 
